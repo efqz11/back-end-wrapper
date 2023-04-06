@@ -1,0 +1,135 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+<!--begin::Toolbar-->
+<div id="kt_app_toolbar" class="app-toolbar py-3 py-lg-6">
+    <!--begin::Toolbar container-->
+    <div id="kt_app_toolbar_container" class="app-container container-xxl d-flex flex-stack">
+        <!--begin::Page title-->
+        <div class="page-title d-flex flex-column justify-content-center flex-wrap me-3">
+            <!--begin::Title-->
+            <h1 class="page-heading d-flex text-dark fw-bold fs-3 flex-column justify-content-center my-0">Subscriptions</h1>
+            <!--end::Title-->
+
+        </div>
+        <!--end::Page title-->
+    </div>
+    <!--end::Toolbar container-->
+</div>
+<!--end::Toolbar-->
+<!--begin::Content-->
+<div id="kt_app_content" class="app-main flex-column-fluid">
+    <!--begin::Content container-->
+    <div class="container d-flex flex-column flex-lg-row py-8 gap-5 flex-column-fluid">
+        <!--begin::Card-->
+        <div class="row card flex-row-fluid">
+
+
+            <div class="card-body mt-10">
+                <!--begin::Card body-->
+                <div class="col-md-12 pb-10 mt-5">
+                    <div class="notice d-flex bg-light-primary rounded border-primary border border-dashed p-6">
+                        <!--begin::Wrapper-->
+                        <div class="d-flex flex-stack flex-grow-1">
+                            <!--begin::Content-->
+                            <div class="fw-semibold">
+                                <div class="fs-6 text-gray-700">
+                                    <h4 style="color:#019ef7">Sign up for a 7-day free trial of Syllaby. Cancel any time. :</h4>
+                                    <p class="text-muted">Get 100,000 Words.<br> Get Ai Written Content.<br> Get Video & Content Ideas.<br>Social media is hard, but you know you need it for your business. Syllaby shows you how to create a content strategy for social media in minutes. Be the expert that you are, we will handle the rest!</p>
+                                </div>
+                            </div>
+                            <!--end::Content-->
+                        </div>
+                        <!--end::Wrapper-->
+                    </div>
+                </div>                <form action="/subscriptions" method="post" id="payment-form">
+                    <input type="hidden" name="_token" value="XEnwzD1NY00VHNLczNT58j1NLUH1mcbEjGOFB9z3">                    <div class="row">
+                        <div data-kt-buttons="true">
+                            <div class="col-md-12">
+                                <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex flex-stack text-start p-6 mb-5">
+                                    <!--end::Description-->
+                                    <div class="d-flex align-items-center me-2">
+                                        <!--begin::Radio-->
+                                        <div class="form-check form-check-custom form-check-solid form-check-primary me-6">
+                                            <input class="form-check-input" type="radio" name="plan"
+                                                   value="price_1MSTYOHWmo7umhRjVtZw4J6a" checked />
+                                        </div>
+                                        <!--end::Radio-->
+                                        <!--begin::Info-->
+                                        <div class="flex-grow-1">
+                                            <h2 class="d-flex align-items-center fs-3 fw-bold flex-wrap">
+                                                Easy Life
+                                            </h2>
+                                        </div>
+                                        <!--end::Info-->
+                                    </div>
+                                    <!--end::Description-->
+                                    <!--begin::Price-->
+                                    <div class="ms-5">
+                                        <span class="mb-2">usd</span>
+                                        <span class="fs-2x fw-bold">
+                                            49
+                                        </span>
+                                        <span class="fs-7 opacity-50">
+                                            /
+                                            <span data-kt-element="period">month</span>
+                                        </span>
+                                    </div>
+                                    <!--end::Price-->
+                                </label>
+                            </div>
+                            <!--begin::Radio button-->
+                            <!--end::Radio button-->
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <h4 style="padding-bottom: 10px;">Credit or debit card </h4>
+                        <!--Input text-->
+                        <div class="fv-row mb-8">
+
+                            <input type="text"
+                                   name="card-holder-name"
+                                   id="card-holder-name"
+                                   class="form-control bg-transparent "
+                                   placeholder="Card holder name"
+                                   value=""
+                                   required autocomplete="card-holder-name"
+                                   autofocus />
+                        </div>
+
+                        <div class="fv-row mb-8">
+                            <div id="card-element" class="form-control"></div>
+                        </div>
+                        <!-- Used to display form errors. -->
+                        <div id="card-errors" role="alert"></div>
+                    </div>
+
+                    <!--begin::Submit button-->
+                    <div class="d-grid  ">
+                        <button type="submit" id="card-button"
+                                data-secret="seti_1MpQzoHWmo7umhRjxezmIP28_secret_NacEXOhXmRVOgfdSWO6JSDxm4Ku2ieh" class="btn btn-primary">
+                            <!--begin::Indicator label-->
+                            <span class="indicator-label">Subscribe</span>
+                            <!--end::Indicator label-->
+                            <!--begin::Indicator progress-->
+                            <span class="indicator-progress">
+                                Please wait...<span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                            </span>
+                            <!--end::Indicator progress-->
+                        </button>
+                    </div>
+                    <!--end::Submit button-->
+                </form>
+                <!--end::Card body-->
+            </div>
+
+        </div>
+        <!--end::Card-->
+    </div>
+    <!--end::Content container-->
+</div>
+<!--end::Content-->
